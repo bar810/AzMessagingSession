@@ -189,7 +189,7 @@
                             "runAfter": {},
                             "type": "ApiConnection",
                             "inputs": {
-                                "body": "{\n\"Type\": \"vul1\",\n\"Ingestion_time\": @{utcNow()},\n\"Corolation_id\": @{guid()}\n}",
+                                "body": "{\n\"Type\": \"V1\",\n\"Ingestion_time\": @{utcNow()},\n\"Corolation_id\": @{guid()}\n}",
                                 "headers": {
                                     "ReadFileMetadataFromServer": true
                                 },
@@ -202,7 +202,7 @@
                                 "path": "/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/files",
                                 "queries": {
                                     "folderPath": "/vulnerabilities",
-                                    "name": "@{utcNow()}_Vul1",
+                                    "name": "@{utcNow()}_V1",
                                     "queryParametersSingleEncoded": true
                                 }
                             },
@@ -216,7 +216,7 @@
                             "runAfter": {},
                             "type": "ApiConnection",
                             "inputs": {
-                                "body": "{\n\"Type\": \"vul2\",\n\"Ingestion_time\": @{utcNow()},\n\"Corolation_id\": @{guid()}\n}",
+                                "body": "{\n\"Type\": \"V2\",\n\"Ingestion_time\": @{utcNow()},\n\"Corolation_id\": @{guid()}\n}",
                                 "headers": {
                                     "ReadFileMetadataFromServer": true
                                 },
@@ -229,7 +229,7 @@
                                 "path": "/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/files",
                                 "queries": {
                                     "folderPath": "/vulnerabilities",
-                                    "name": "@{utcNow()}_Vul2",
+                                    "name": "@{utcNow()}_V2",
                                     "queryParametersSingleEncoded": true
                                 }
                             },
@@ -243,7 +243,7 @@
                             "runAfter": {},
                             "type": "ApiConnection",
                             "inputs": {
-                                "body": "{\n\"Type\": \"vul3\",\n\"Ingestion_time\": @{utcNow()},\n\"Corolation_id\": @{guid()}\n}",
+                                "body": "{\n\"Type\": \"V3\",\n\"Ingestion_time\": @{utcNow()},\n\"Corolation_id\": @{guid()}\n}",
                                 "headers": {
                                     "ReadFileMetadataFromServer": true
                                 },
@@ -256,7 +256,7 @@
                                 "path": "/v2/datasets/@{encodeURIComponent(encodeURIComponent('AccountNameFromSettings'))}/files",
                                 "queries": {
                                     "folderPath": "/vulnerabilities",
-                                    "name": "@{utcNow()}_Vul3",
+                                    "name": "@{utcNow()}_V3",
                                     "queryParametersSingleEncoded": true
                                 }
                             },
