@@ -8,7 +8,7 @@
     },
     "variables": {
         "storage_account_name": "[concat(parameters('alias'), 'vuldb')]",
-        "logic_app_name": "[concat(parameters('alias'), '-vulnerabilities-creator')]",
+        "logic_app_name": "[concat(parameters('alias'), '-vulnerabilities-scanner')]",
         "storage_connection_name": "[concat(parameters('alias'), 'conn')]",
         "storage_account_id": "[resourceId('Microsoft.Storage/storageAccounts', variables('storage_account_name'))]"
     },
